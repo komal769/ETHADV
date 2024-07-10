@@ -25,9 +25,40 @@ To run this project locally, follow these steps:
 ```bash
 git clone <repository_url>
 cd scm-starter
+```
 
 ### 2. Install dependencies
 
 ```bash
 npm install
+```
+
+### 3. Start the local blockchain
+
+Open a terminal and run:
+
+```bash
+npx hardhat node
+```
+
+### 4. Deploy the smart contract to the local blockchain
+
+Open a second terminal and run:
+
+```bash
+npx hardhat run --network localhost scripts/deploy.js
+```
+
+### 5. Start the frontend development server
+
+Open a third terminal and run:
+
+```bash
+npm run dev
+```
+
+### 6. Open your browser
+
+Go to **http://localhost:3000** to view the application.
+
 
