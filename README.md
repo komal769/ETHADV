@@ -26,3 +26,8 @@ To run this project locally, follow these steps:
 git clone <repository_url>
 cd scm-starter
 
+### 2. Install dependencies
+
+```bash
+npm install
+
