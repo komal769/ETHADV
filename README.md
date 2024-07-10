@@ -1,4 +1,4 @@
-# scm-starter
+# SCM-STARTER
 
 **scm-starter** is a decentralized application (DApp) built using Ethereum blockchain technology. It allows users to interact with a smart contract deployed on the Ethereum network to perform basic functions.
 
@@ -61,4 +61,9 @@ npm run dev
 
 Go to **http://localhost:3000** to view the application.
 
+## Usage
 
+Connect MetaMask:
+
+- Ensure MetaMask is installed in your browser.
+- Connect MetaMask to the local blockchain network.
