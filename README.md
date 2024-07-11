@@ -1,5 +1,5 @@
 
-# SCM-STARTER
+# Function Frontend
 
 **scm-starter** is a decentralized application (DApp) built using Ethereum blockchain technology. It allows users to interact with a smart contract deployed on the Ethereum network to perform basic functions.
 
