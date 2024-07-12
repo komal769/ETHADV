@@ -1,13 +1,13 @@
 
-# Function Frontend
+# SCM-STARTER
 
 **scm-starter** is a decentralized application (DApp) built using Ethereum blockchain technology. It allows users to interact with a smart contract deployed on the Ethereum network to perform basic functions.
 
 ## Features
 
-- **View Balance**: Users can view their account balance stored in the smart contract.
-- **Deposit**: Users can deposit Ether into the smart contract.
-- **Withdraw**: Users can withdraw Ether from the smart contract.
+- **View Candidates**: Users can view the list of candidates.
+- **Vote**: Users can vote for their favorite candidate.
+- **View Votes**: Users can see the current votes for each candidate.
 
 ## Technologies Used
 
@@ -71,7 +71,7 @@ Connect MetaMask:
 
 Interact with the DApp:
 
-- Use the provided buttons to deposit and withdraw Ether.
+- Use the provided interface to view candidates and vote for them.
 - Ensure sufficient Ether balance in your MetaMask wallet for transactions.
 
 ## Contributing
