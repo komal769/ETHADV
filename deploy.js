@@ -1,15 +1,17 @@
-const hre = require("hardhat");
-
 async function main() {
-  const initBalance = 1;
-  const Assessment = await hre.ethers.getContractFactory("Assessment");
-  const assessment = await Assessment.deploy(initBalance);
-  await assessment.deployed();
+    const [deployer] = await ethers.getSigners();
 
-  console.log(`A contract with balance of ${initBalance} ETH deployed to ${assessment.address}`);
+    console.log("Deploying contracts with the account:", deployer.address);
+
+    const Auction = await ethers.getContractFactory("Auction");
+    const auction = await Auction.deploy("My Awesome Item", ethers.utils.parseEther("0.1"), 600); // 600 seconds duration
+
+    console.log("Auction contract deployed to:", auction.address);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main()
+    .then(() => process.exit(0))
+    .catch((error) => {
+        console.error(error);
+        process.exit(1);
+    });
