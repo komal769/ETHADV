@@ -1,13 +1,12 @@
+# Auction DApp
 
-# SCM-STARTER
-
-**scm-starter** is a decentralized application (DApp) built using Ethereum blockchain technology. It allows users to interact with a smart contract deployed on the Ethereum network to perform basic functions.
+**Auction DApp** is a decentralized application (DApp) built using Ethereum blockchain technology. It allows users to bid on items through a smart contract deployed on the Ethereum network.
 
 ## Features
 
-- **View Candidates**: Users can view the list of candidates.
-- **Vote**: Users can vote for their favorite candidate.
-- **View Votes**: Users can see the current votes for each candidate.
+- **Auction Item**: Users can view the item up for auction.
+- **Place Bids**: Users can place bids on the auction item.
+- **View Current Bid**: Users can see the highest bid placed on the item.
 
 ## Technologies Used
 
@@ -15,7 +14,8 @@
 - **Hardhat**: Ethereum development environment.
 - **React**: Frontend JavaScript library.
 - **MetaMask**: Ethereum wallet integration.
-- **Web3.js / Ethers.js**: Ethereum JavaScript libraries for interaction with smart contracts.
+- **Ethers.js**: Ethereum JavaScript library for interaction with smart contracts.
+- **Redux**: State management for React.
 
 ## Setup
 
@@ -25,7 +25,7 @@ To run this project locally, follow these steps:
 
 ```bash
 git clone <repository_url>
-cd scm-starter
+cd auction-dapp
 ```
 
 ### 2. Install dependencies
@@ -55,7 +55,7 @@ npx hardhat run --network localhost scripts/deploy.js
 Open a third terminal and run:
 
 ```bash
-npm run dev
+npm start
 ```
 
 ### 6. Open your browser
@@ -71,7 +71,7 @@ Connect MetaMask:
 
 Interact with the DApp:
 
-- Use the provided interface to view candidates and vote for them.
+- Use the provided interface to view the auction item and place bids.
 - Ensure sufficient Ether balance in your MetaMask wallet for transactions.
 
 ## Contributing
@@ -90,10 +90,7 @@ This project is licensed under the MIT License - see the [LICENCE](https://githu
 
 ## Acknowledgments
 
-This project stands on the shoulders of giants, and I would like to extend my gratitude to the following:
-
-- **OpenZeppelin**: Their comprehensive resources on smart contract development were instrumental in understanding best practices and security considerations.
-- **Decentralized Finance (DeFi) Applications**: Inspiration drawn from various DeFi projects that have paved the way for innovative blockchain applications.
+This project was inspired by various auction platforms and blockchain applications that demonstrate the power of decentralized technologies.
 
 ## Contributing
 
