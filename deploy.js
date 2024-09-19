@@ -1,17 +1,24 @@
+// scripts/deploy.js
+
 async function main() {
-    const [deployer] = await ethers.getSigners();
-
-    console.log("Deploying contracts with the account:", deployer.address);
-
-    const Auction = await ethers.getContractFactory("Auction");
-    const auction = await Auction.deploy("My Awesome Item", ethers.utils.parseEther("0.1"), 600); // 600 seconds duration
-
-    console.log("Auction contract deployed to:", auction.address);
-}
-
-main()
+    // Get the contract factory
+    const RewardSystem = await ethers.getContractFactory("RewardSystem");
+  
+    // Deploy the contract
+    const rewardSystem = await RewardSystem.deploy();
+  
+    // Wait for the deployment to be confirmed
+    await rewardSystem.deployed();
+  
+    // Log the contract address
+    console.log("RewardSystem deployed to:", rewardSystem.address);
+  }
+  
+  // Run the script and handle errors
+  main()
     .then(() => process.exit(0))
     .catch((error) => {
-        console.error(error);
-        process.exit(1);
+      console.error(error);
+      process.exit(1);
     });
+  
