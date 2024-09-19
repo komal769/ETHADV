@@ -1,21 +1,21 @@
-# Auction DApp
+# Dynamic Reward System DApp
 
-**Auction DApp** is a decentralized application (DApp) built using Ethereum blockchain technology. It allows users to bid on items through a smart contract deployed on the Ethereum network.
+**Dynamic Reward System DApp** is a decentralized application (DApp) built on the Ethereum blockchain. It allows users to manage and view rewards dynamically through smart contracts deployed on the Ethereum network.
 
 ## Features
 
-- **Auction Item**: Users can view the item up for auction.
-- **Place Bids**: Users can place bids on the auction item.
-- **View Current Bid**: Users can see the highest bid placed on the item.
+- **View Current Block Number**: Users can see the current block number on the Ethereum network.
+- **Fetch Contract Data**: Users can retrieve various rewards data from the smart contract.
+- **User Data**: The DApp allows querying of user-specific information related to rewards.
 
 ## Technologies Used
 
 - **Solidity**: Smart contract programming language.
-- **Hardhat**: Ethereum development environment.
-- **React**: Frontend JavaScript library.
-- **MetaMask**: Ethereum wallet integration.
-- **Ethers.js**: Ethereum JavaScript library for interaction with smart contracts.
-- **Redux**: State management for React.
+- **Hardhat**: Ethereum development environment for deploying and testing smart contracts.
+- **React**: Frontend JavaScript library for building the user interface.
+- **MetaMask**: Ethereum wallet integration for managing user accounts.
+- **Ethers.js**: JavaScript library for interacting with the Ethereum blockchain.
+- **Redux**: State management for React applications.
 
 ## Setup
 
@@ -25,13 +25,14 @@ To run this project locally, follow these steps:
 
 ```bash
 git clone <repository_url>
-cd auction-dapp
+cd dynamic-reward-system
 ```
 
 ### 2. Install dependencies
 
 ```bash
-npm install
+cd frontend
+yarn install
 ```
 
 ### 3. Start the local blockchain
@@ -55,7 +56,7 @@ npx hardhat run --network localhost scripts/deploy.js
 Open a third terminal and run:
 
 ```bash
-npm start
+yarn start
 ```
 
 ### 6. Open your browser
@@ -71,7 +72,7 @@ Connect MetaMask:
 
 Interact with the DApp:
 
-- Use the provided interface to view the auction item and place bids.
+- Use the provided interface to view the current block number and contract data.
 - Ensure sufficient Ether balance in your MetaMask wallet for transactions.
 
 ## Contributing
@@ -90,7 +91,7 @@ This project is licensed under the MIT License - see the [LICENCE](https://githu
 
 ## Acknowledgments
 
-This project was inspired by various auction platforms and blockchain applications that demonstrate the power of decentralized technologies.
+This project is inspired by various decentralized applications that showcase the power of blockchain technology and smart contracts.
 
 ## Contributing
 
